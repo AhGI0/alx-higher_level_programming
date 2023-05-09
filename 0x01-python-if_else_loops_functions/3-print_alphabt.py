@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-import string
-
-# iterate over all lowercase letters in the English alphabet
-for letter in string.ascii_lowercase:
-    print(letter, end='')
+output = ""
+for character in range(97, 123):
+    output += "{:c}".format(character)
+print(output)
